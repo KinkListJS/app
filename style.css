@@ -1,0 +1,246 @@
+/* ~SaVa~ */
+
+html {
+  scrollbar-width: none;
+  
+}
+body {
+  background-color:black;
+}
+#copyID{
+  font-family: "Trebuchet MS";
+  font-size: 2.5vh;
+  color: #858590;
+  background-color:#18181b;
+  text-align: center;
+  align-self: center;
+  border:0px solid black;
+  border-radius: 15px;
+  margin: auto;
+  padding: 1vh;
+}
+#actionbar{
+  height: 7vh;
+  margin: auto;
+  line-height: 0%;
+  font-family: "Trebuchet MS";
+  font-size: 3vh;
+  color: #858590;
+  border:2px solid black;
+  background-color:#08080b;
+  padding-left: 1%;
+  width: 208vh;
+  text-align: center;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns:33.33% 33.33% 33.33%;
+}
+#main{
+  border:2px solid black;
+    width: 208vh;
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns:52vh 52vh 52vh 52vh;
+    grid-template-rows: repeat(1, 100%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+  #main::-webkit-scrollbar{
+    display: none;
+  }
+@media (max-width: 208vh) {
+  .big{display: inherit;}
+  .small{display: none;}
+  #actionbar{
+    width: 98vw;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  #main{
+  border:2px solid black;
+    width: 98vw;
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns:24.5vw 24.5vw 24.5vw 24.5vw;
+    grid-template-rows: repeat(1, 100%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+  #main::-webkit-scrollbar{
+    display: none;
+  }
+}
+@media (max-width: 150vh) {
+  .big{display: none;}
+  .small{display: inherit;}
+  #actionbar{
+    width: 96vw;
+    grid-template-columns:20% 60% 20%;
+  }
+  #main{
+    width: 96vw;
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns:48vw 48vw;
+    grid-template-rows: repeat(2, 100%);
+    scrollbar-width: none;
+  }
+  #main::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+@media (max-width: 75vh) {
+  .big{display: none;}
+  .small{display: inherit;}
+  #actionbar{
+    width: 94vw;
+    grid-template-columns:10% 80% 10%;
+  }
+  #main{
+    width: 94vw;
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns:94vw;
+    grid-template-rows: repeat(4, 100%);
+    scrollbar-width: none;
+  }
+  #main::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+
+.Column{
+        display: grid;
+         border:2px solid black;
+         width: auto;
+         height: auto;
+}
+#c1{grid-template-rows: 67% 33%}
+#c2{grid-template-rows: 37% 37% 26%;}
+#c3{grid-template-rows: 66% 34%;}
+#c4{grid-template-rows: 28% 28% 44%;}
+
+.KinkCategory {
+  line-height: 3%;
+  font-family: "Trebuchet MS";
+  font-size: 2vh;
+  color: #858590;
+  border:1px solid black;
+  background-color:#08080b;
+  margin: 1%;
+  width: 94.5%;
+  text-align: left;
+  padding-left:2%;
+  padding-right:2%;
+  padding-bottom: 2%;
+  border-radius:15px;
+  display: grid;
+}
+.KinkCategoryTitle{
+  margin-bottom: -1%;
+  padding-left: 1%;
+}
+.Kink-DualSelector{
+  color: #c5c5ce;
+  margin: 1.5%;
+  padding: 2%;
+  background-color: #18181f;
+  border-radius:10px;
+  display: grid;
+  grid-template-columns: 50% 50%
+}
+.Kink-SingleSelector{
+  color: #c5c5ce;
+  margin: 1.5%;
+  padding: 2%;
+  background-color: #18181f;
+  border-radius:10px;
+  display: grid;
+  grid-template-columns: 50% 50%
+}
+.KinkTitle{
+  font-size: 2.5vh;
+  text-align: left;
+  align-self: center;
+  padding-left: 2.5%;
+  margin: 2%;
+}
+.SingleKinkSelector{
+  align-self: center;
+}
+.DualKinkSelector{
+  align-self: center;
+}
+.KinkSelector{
+  white-space: nowrap;
+  font-size: 1.5vh;
+  text-align: right;
+  padding-right: 2.5%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
+  margin: 2%;
+}
+
+.KinkSelectMenu{
+  font-size: 1.5vh;
+  border-color: #18181f;
+  border-radius: 7px;
+  background-color: #c5c5ce;
+  color: #010104;
+}
+.KinkSelectMenu option{color: #010104;}
+.KinkSelectMenu option[value="0"]{background-color: #d5d5de;}
+.KinkSelectMenu option[value="1"]{background-color: #4d0a0a;color: #c5c5ce;}
+.KinkSelectMenu option[value="2"]{background-color: #b06a23;}
+.KinkSelectMenu option[value="3"]{background-color: #c1c94f;}
+.KinkSelectMenu option[value="4"]{background-color: #40b538;}
+.KinkSelectMenu option[value="5"]{background-color: #84a6c2;}
+
+.KinkContainer{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  height: 100%;
+  border-radius: 20px;
+
+}
+.KinkContainer::-webkit-scrollbar{
+  display: none;
+}
+@media (max-width: 208vh) {
+  .KinkCategoryTitle{font-size:1.25vw;}
+  .KinkTitle{font-size:1.0vw;}
+  .KinkSelector{font-size:0.8vw;}
+  .KinkSelectMenu{font-size:0.8vw;}
+}
+@media (max-width: 150vh) {
+  .KinkCategoryTitle{font-size:1.75vw;}
+  .KinkTitle{font-size:2.0vw;}
+  .KinkSelector{font-size:1.25vw;}
+  .KinkSelectMenu{font-size:1.25vw;}
+}
+@media (max-width: 75vh) {
+  .KinkCategoryTitle{font-size:3vw;}
+  .KinkTitle{font-size:3.0vw;}
+  .KinkSelector{font-size:2.25vw;}
+  .KinkSelectMenu{font-size:2.25vw;}
+}
+@media (max-width: 60vh) {
+  .KinkCategoryTitle{font-size:3vw;}
+  .KinkTitle{font-size:1.25vw;}
+  .KinkSelector{font-size:2.25vw;}
+  .KinkSelectMenu{font-size:2.25vw;}
+}
+@media (max-width: 45vh) {
+  .KinkCategoryTitle{font-size:2vw;}
+  .KinkTitle{font-size:1vw;}
+  .KinkSelector{font-size:2.25vw;}
+  .KinkSelectMenu{font-size:2.25vw;}
+}
