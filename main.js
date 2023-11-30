@@ -82,6 +82,7 @@ function getDataURLParam() {
 }
 
 function alertSharableID(){
-    navigator.clipboard.writeText(window.location.href.split('?')[0]+"?d="+collectListData());
-    alert("Coppied to Clipboard!");
+    navigator.clipboard.writeText(window.location.href.split('?')[0]+"?d="+collectListData()).then(()=>{
+        alert("Coppied to Clipboard!");})
+        .catch(()=>{alert("Failed to Copy.");}); 
 }
